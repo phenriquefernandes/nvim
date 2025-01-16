@@ -13,6 +13,7 @@ return {
     },
     { 'nvim-telescope/telescope-ui-select.nvim' },
     { 'nvim-tree/nvim-web-devicons', enable = vim.g.have_nerd_font },
+    'jonarrien/telescope-cmdline.nvim',
   },
   config = function()
     require('telescope').setup {
