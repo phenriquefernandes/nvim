@@ -1,13 +1,13 @@
 --
-vim.keymap.set('n', '<M-Space>', '<CMD>Explore<CR>')
+vim.keymap.set('n', '<M-Space>', '<cmd>Explore<CR>')
 
 --
-vim.keymap.set({ 'n', 'i', 'v' }, '<C-s>', '<CMD>write<CR>')
-vim.keymap.set({ 'n', 'i', 'v' }, '<C-q>', '<CMD>quit<CR>')
+vim.keymap.set({ 'n', 'i', 'v' }, '<C-s>', '<cmd>write<CR>')
+vim.keymap.set({ 'n', 'i', 'v' }, '<C-q>', '<cmd>quit<CR>')
 vim.keymap.set('n', '<C-a>', 'gg0vGg_')
 
 --
-vim.keymap.set({ 'n', 'i', 'v' }, '<C-q>', '<CMD>quit<CR>')
+vim.keymap.set({ 'n', 'i', 'v' }, '<C-q>', '<cmd>quit<CR>')
 
 --
 vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
@@ -39,16 +39,12 @@ vim.keymap.set('n', 'H', '_')
 vim.keymap.set('n', 'L', 'g_')
 
 --
-vim.keymap.set('n', '<Esc>', '<CMD>nohlsearch<CR>')
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 --
 vim.keymap.set('n', '<leader>S', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 --
-vim.keymap.set('n', '<C-h>', '<C-w>h')
-vim.keymap.set('n', '<C-j>', '<C-w>j')
-vim.keymap.set('n', '<C-k>', '<C-w>k')
-vim.keymap.set('n', '<C-l>', '<C-w>l')
 vim.keymap.set('n', '<C-right>', '<C-w><')
 vim.keymap.set('n', '<C-left>', '<C-w>>')
 vim.keymap.set('n', '<C-up>', '<C-w>+')
@@ -56,8 +52,10 @@ vim.keymap.set('n', '<C-down>', '<C-w>-')
 
 --
 vim.keymap.set('n', 'te', ':tabedit')
-vim.keymap.set('n', '<tab>', ':tabnext<Return>')
-vim.keymap.set('n', '<s-tab>', ':tabprev<Return>')
+vim.keymap.set('n', '<up>', ':tabfirst<Return>')
+vim.keymap.set('n', '<down>', ':tablast<Return>')
+vim.keymap.set('n', '<right>', ':tabnext<Return>')
+vim.keymap.set('n', '<left>', ':tabprev<Return>')
 
 --
 vim.keymap.set('n', 'ss', ':split<Return>')
