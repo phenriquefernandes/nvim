@@ -13,6 +13,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
     map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
     map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction', { 'n', 'x' })
+    map('<M-Return>', vim.lsp.buf.code_action, '[ ] Code Action', { 'n', 'x' })
     map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
     map('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
 
